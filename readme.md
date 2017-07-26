@@ -38,8 +38,14 @@ ssh -p 8022 root@localhost
 
 enter root login and enter container
 
-* access other containers from this container
+
+* access other Docker containers on the host
 ```
-docker ps
+ssh -p 8022 root@localhost
+
+
+root@145b03e2f6e7:~# docker ps
+
+# see the list of docker container on the host
 
 ```
