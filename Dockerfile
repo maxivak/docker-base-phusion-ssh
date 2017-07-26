@@ -28,6 +28,10 @@ ADD files/ssh/sshd_config /etc/ssh/sshd_config
 
 RUN chown root:root /var/run/sshd && chmod 700 /var/run/sshd
 
+# scripts
+ADD files/change_root_pwd.sh /etc/change_root_pwd.sh
+RUN chmod +x /etc/change_root_pwd.sh
+
 
 # clean
 RUN apt-get update && \

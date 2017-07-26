@@ -30,6 +30,11 @@ PASS='newpass'
 echo -e "$PASS\n$PASS" | docker exec -i my-ssh passwd
 ```
 
+or using script
+```
+docker exec my-ssh bash -c "/etc/change_root_pwd.sh 'newpass' " 
+```
+
 
 * login by ssh
 ```
