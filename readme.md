@@ -2,6 +2,11 @@
 
 * based on phusion base Docker image
 
+includes
+* ssh server
+* docker.io client utility to connect to other docker containers on host
+
+
 
 # Run
 
